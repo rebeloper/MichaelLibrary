@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct TheImageView: View {
+public struct TheImageView: View {
     
-    var name: String
+    private var name: String
     
-    init(_ name: String = "globe") {
+    public init(_ name: String = "globe") {
         self.name = name
     }
     
-    var body: some View {
+    public var body: some View {
         Image(systemName: name)
             .imageScale(.large)
             .foregroundStyle(.tint)
